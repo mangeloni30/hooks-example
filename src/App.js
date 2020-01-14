@@ -5,7 +5,7 @@ import { useState, useEffect } from 'react';
 
 function App() {
   const [name, setMyName] = useState('No name');
-  const [colorClass, setColorClass] = useState('button__div--normal');
+  const [colorClass, setColorClass] = useState('button__div');
 
   /**
    * @name clickHandler
@@ -17,6 +17,7 @@ function App() {
    */
   const clickHandler = (name) => {
     setMyName(name);
+    setColorClass('button__div button__div--green')
   };
 
     /**
@@ -33,6 +34,7 @@ function App() {
   return (
     <div className="App">
       <div className="button-text__div--container">
+        <i class="fas fa-thumbs-up fa-5x"></i>
         <button 
           className={colorClass}
           type="button"

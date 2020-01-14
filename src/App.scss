@@ -8,12 +8,15 @@
   .button-text__div--container {
     width: 50%;
     .button__div {
-      &--normal {
-        background-color: grey;
-        color: white;
-        width: 50%;
-        height: 10%;
-        border-radius: 4px;
+      background-color: grey;
+      color: white;
+      width: 50%;
+      height: 40px;
+      border-radius: 4px;
+      cursor: pointer;
+      
+      &--green {
+        background-color: green;
       }
     }
     .text__p--color {
