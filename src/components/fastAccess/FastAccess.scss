@@ -1,0 +1,11 @@
+.fast-access__div {
+  display: flex;
+  flex-direction: row;
+  height: 40px;
+  background-color: black;
+  opacity: 0.4;
+  .own-links-container__div {
+    opacity: 1;
+    background-color: red;
+  }
+}

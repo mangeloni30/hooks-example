@@ -7,7 +7,8 @@
   background-color: #212936;
   height: 100vh;
   display: flex;
-  padding-top: 6%;
+  flex-direction: column;
+  // padding-top: 6%;
   width: 100%;
   p {
     font-family: "neosans regular", "Helvetica Neue", Helvetica, Arial, Sans-serif;

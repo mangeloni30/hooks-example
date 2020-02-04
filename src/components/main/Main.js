@@ -1,6 +1,7 @@
 import React from 'react';
 import Header from '../header/Header'
-import MyName from '../myname/MyName'
+import MainApp from '../mainApp/MainApp'
+import FastAccess from '../fastAccess/FastAccess'
 
 // import { useState, useEffect } from 'react';
 
@@ -9,7 +10,7 @@ class Main extends React.Component {
     return (
       <React.Fragment>
         <Header />
-        <MyName />
+        <MainApp />
       </React.Fragment>
     )
   }

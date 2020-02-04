@@ -1,13 +1,14 @@
 import React from 'react';
-import './MyName.scss';
+import './MainApp.scss';
 import { useState, useEffect } from 'react';
 import InformationBox from '../informationBox/InformationBox'
+import FastAccess from '../fastAccess/FastAccess'
 
 /**
  * MyName
  * @returns 
  */
-const MyName = () => {
+const MainApp = () => {
 
   const intormation = 'Im working as Front End Developer with React, Redux, Redux-Sagas, Redux-Thunk, NodeJS, SASS, LESS and another frameworks. Also Im a proactive team mate and always open to learn new frameworks and all related with programming. I love to help and teach others in the work environment'
   const title = 'About me'
@@ -17,6 +18,7 @@ const MyName = () => {
 
   return (
     <div className="App">
+      <FastAccess />
       <div className="main-container__div">
         <InformationBox 
           title={title}
@@ -35,4 +37,4 @@ const MyName = () => {
   );
 }
 
-export default MyName;
+export default MainApp;
