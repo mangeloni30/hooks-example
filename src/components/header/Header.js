@@ -5,17 +5,13 @@ class Header extends React.Component {
   render() {
     return (
       <header className="icons-container__header">
-        <div className="text-conatiner__div">
-          <i class="fas fa-user" />
-          I'm Martín - Web UI Developer
-        </div>
         <div className="titles-container__div">
-        <i class="fab fa-facebook" />
-        <i class="fab fa-twitter" />
-        <i class="fab fa-linkedin" />
-        <i class="fab fa-github" />
-        <i class="fab fa-pinterest" />
-        <i class="fab fa-youtube" />
+          <i class="fab fa-facebook" />
+          <i class="fab fa-twitter" />
+          <i class="fab fa-linkedin" />
+          <i class="fab fa-github" />
+          <i class="fab fa-pinterest" />
+          <i class="fab fa-youtube" />
         </div>
         {/* <img className="profile-img" /> */}
       </header>
