@@ -13,7 +13,6 @@ class Header extends React.Component {
           <i class="fab fa-pinterest" />
           <i class="fab fa-youtube" />
         </div>
-        {/* <img className="profile-img" /> */}
       </header>
     )
   }

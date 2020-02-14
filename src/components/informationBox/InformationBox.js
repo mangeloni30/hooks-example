@@ -3,11 +3,15 @@ import './InformationBox.scss';
 import { useState } from 'react';
 
 /**
- * InformationBox
- * @returns 
+ * @method InformationBox
+ * method responsible of render the content 
+ * of an information box
+ * @author Martin Angeloni
+ * @returns {React.ReactNode}
  */
 const InformationBox = (props) => {
   const [animationClass, setAnimationClass] = useState('');
+  const [showContent, setShowContent] = useState(false);
 
   /** 
    * @method arrowTogle
@@ -18,8 +22,10 @@ const InformationBox = (props) => {
   const arrowTogle = () => {
     if(animationClass !== 'arrow-down') {
       setAnimationClass('arrow-down');
+      setShowContent(true);
     } else {
       setAnimationClass('arrow-up');
+      setShowContent(false);
     }
   }
 
@@ -35,7 +41,7 @@ const InformationBox = (props) => {
         />
         <p>{props.title}</p>
       </div>
-        {animationClass === 'arrow-down' && (
+        {showContent && (
           <div className="about-me-content-container__div">
             <div className="background__div">
               <p>
